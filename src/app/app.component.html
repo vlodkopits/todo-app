@@ -14,7 +14,7 @@
     </ul>
   </section>
   <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title">
-  <button class="btn" (click)="addTodo()">ADD</button>
+  <button class="btn" (click)="addTodo()" [class.disable]="!newTodo.title.length" [disabled]="!newTodo.title.length">ADD</button>
   <footer class="footer" *ngIf="todos.length > 0">
     <span class="todo-count">Total: {{todos.length}}, completed: {{complete.length}}</span>
   </footer>

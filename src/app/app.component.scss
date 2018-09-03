@@ -12,6 +12,11 @@ section {
         margin: 0 2px;
         border: 0;
         cursor: pointer;
+        
+        &.disable {
+            background-color: #cecece;
+            cursor: not-allowed;
+        }
     }
     
     input {
